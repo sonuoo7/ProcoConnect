@@ -45,7 +45,8 @@ button.btn {
     padding: 7px 25px;
     border-radius: 50px;
 }
-button.btn:hover{
+
+button.btn:hover {
     background-color: #fff;
 }
 
@@ -53,6 +54,7 @@ i {
     color: #593E95;
 
 }
+
 /* header css Home page */
 .navigation {
     height: 80px;
@@ -200,7 +202,7 @@ i {
     transform: translateY(-5px);
     background-color: rgb(120, 116, 217);
     color: #fff;
-        /* Change background color on hover */
+    /* Change background color on hover */
 }
 
 .feature-box3 {
@@ -223,7 +225,7 @@ i {
     transform: translateY(-5px);
     background-color: rgb(160, 112, 224);
     color: white;
-        /* Change background color on hover */
+    /* Change background color on hover */
 }
 
 .feature-box2 {
@@ -287,4 +289,98 @@ i {
 
 .sidebar {
     margin-top: 200px;
+}
+
+/* choose us */
+.choose__img img {
+    border-radius: 15px;
+}
+
+.choose__content {
+    padding-right: 50px;
+}
+
+.choose__content h2 {
+    font-weight: 600;
+}
+
+.choose__img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 777;
+}
+
+.play__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    z-index: 7777;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.play__icon i {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.chooseus {
+    margin-bottom: 5%;
+}
+
+.choose__icon i {
+    font-size: 2rem;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.video-wrapper .play__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    cursor: pointer;
+}
+/* CSS for Testimonial Carousel */
+.tb-testimonial {
+    display: flex;
+    align-items: center;
+}
+
+.tb-testimonial-left {
+    flex: 1;
+}
+
+.tb-testimonial-right {
+    flex: 1;
+}
+
+.tb-testimonial-img {
+    height: 150px;
+    /* Set the desired height for the image */
+    background-size: cover;
+    background-position: center center;
 }
