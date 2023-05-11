@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Remixicon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+    <!-- React Responsive Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/react-responsive-carousel/3.2.10/styles/carousel.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navigation d-flex align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="/" class="d-flex align-items-center gap-1">
+                        <img class="logo" src="procologo.jpg" alt="" />
+                    </a>
+                </div>
+
+                <div class="nav d-flex align-items-center gap-5">
+                    <div class="nav__menu" onclick="menuToggle()">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="index.html" onclick="scrollToTop()">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="About.html" onclick="scrollToTop()">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="Blog.html" onclick="scrollToTop()">Blog</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="ResumeWriting.html" onclick="scrollToTop()">Resume Writing</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="Contact.html" onclick="scrollToTop()">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav__right">
+                        <p class="mb-0 d-flex align-items-center gap-2">
+                            <i class="ri-phone-line"></i> +(91) 0123456789
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mobile__menu">
+                    <span>
+                        <i class="ri-menu-line" onclick="menuToggle()"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <h1>Blog</h1>
+</body>
+
+</html>

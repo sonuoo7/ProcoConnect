@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+/* =========== base style ========= */
+@font-face {
+    font-family: 'Menlo Regular';
+    src: local('Menlo Regular'), url('./../../Fonts/Menlo-Regular.woff') format('woff');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section,
+footer {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 2.5rem;
+    line-height: 50px;
+    /* color: #0a2b1e; */
+    font-weight: 600;
+}
+
+p {
+    color: #000806;
+    font-size: 1.2rem;
+    line-height: 30px;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+}
+
+button.btn {
+    background: #593E95;
+    color: #fff;
+    padding: 7px 25px;
+    border-radius: 50px;
+}
+button.btn:hover{
+    background-color: #fff;
+}
+
+i {
+    color: #593E95;
+
+}
+/* header css Home page */
+.navigation {
+    height: 80px;
+    /* adjust the height as needed */
+}
+
+.logo {
+    height: 40px;
+    background: none;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* .header.scroll {
+    background-color: #dfe7e6;
+} */
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    column-gap: 1.3rem;
+}
+
+.nav__item a {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #0a2b1e;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav__item a:hover {
+    color: #513a87;
+}
+
+.nav__right p {
+    font-weight: 500;
+    color: #0a2b1e;
+    font-size: 1.1rem;
+}
+
+.nav__right p i {
+    font-size: 1.3rem;
+}
+
+.mobile__menu span i {
+    font-size: 1.4rem;
+    color: #0a2b1e;
+    cursor: pointer;
+}
+
+.mobile__menu {
+    display: none;
+}
+
+@media only screen and (max-width: 991px) {
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #0a2b1ec2;
+        z-index: 99;
+        display: none;
+    }
+
+    .nav__list {
+        position: absolute;
+        background: #fff;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 999;
+        padding-top: 80px;
+    }
+
+    .mobile__menu {
+        display: block;
+    }
+
+    .nav__right {
+        display: none;
+    }
+
+    .active__menu {
+        display: block;
+    }
+}
+
+/* Feature Section css */
+
+/* Feature.css */
+
+.features-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.features-list li {
+    margin-bottom: 0px;
+}
+
+
+
+.features-list h5,
+.features-list p {
+    margin: 0;
+    margin: 5px;
+    padding: 0 auto;
+    color: black;
+    /* color: white; */
+    /* padding: 10px; */
+}
+
+.feature-box1 {
+    position: relative;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid wheat;
+    margin-top: 20px;
+    /* height: 300px; */
+    /* Set the default height for feature boxes */
+}
+
+.feature-box1:hover {
+    transform: translateY(-5px);
+    background-color: rgb(120, 116, 217);
+    color: #fff;
+        /* Change background color on hover */
+}
+
+.feature-box3 {
+
+    /* Set the height for the first feature box */
+}
+
+.feature-box3 {
+    position: relative;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid wheat;
+    margin-top: 10px;
+    /* height: 300px; */
+    /* Set the default height for feature boxes */
+}
+
+.feature-box3:hover {
+    transform: translateY(-5px);
+    background-color: rgb(160, 112, 224);
+    color: white;
+        /* Change background color on hover */
+}
+
+.feature-box2 {
+    /* margin-top: 0px; */
+    /* Set the height for the third feature box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Align the third feature box to the center */
+}
+
+.feature-box2 {
+    position: relative;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid wheat;
+    /* height: 300px; */
+    /* Set the default height for feature boxes */
+}
+
+.feature-box2:hover {
+    transform: translateY(-5px);
+    background-color: rgb(228, 92, 68);
+    font-weight: 400;
+    color: white;
+    /* Change background color on hover */
+}
+
+
+.feature-box4 {
+    margin-top: -50px;
+    /* Set the height for the fourth feature box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Align the fourth feature box to the center vertically and horizontally */
+}
+
+.feature-box4 {
+    position: relative;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid wheat;
+    /* height: 300px; */
+    /* Set the default height for feature boxes */
+}
+
+.feature-box4:hover {
+    transform: translateY(-5px);
+    background-color: rgb(107, 206, 204);
+    color: white;
+    /* Change background color on hover */
+}
+
+.content {
+    margin-top: 200px;
+}
+
+.sidebar {
+    margin-top: 200px;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Remixicon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+    <!-- React Responsive Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/react-responsive-carousel/3.2.10/styles/carousel.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navigation d-flex align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="/" class="d-flex align-items-center gap-1">
+                        <img class="logo" src="./Assets//images//procologo.jpg" alt="" />
+                    </a>
+                </div>
+
+                <div class="nav d-flex align-items-center gap-5">
+                    <div class="nav__menu" onclick="menuToggle()">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="index.html" onclick="scrollToTop()">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="About.html" onclick="scrollToTop()">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="Blog.html" onclick="scrollToTop()">Blog</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="ResumeWriting.html" onclick="scrollToTop()">Resume Writing</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="Contact.html" onclick="scrollToTop()">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav__right">
+                        <p class="m-2 d-flex align-items-center">
+                            <i class="ri-phone-line"></i> +(91) 0123456789
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mobile__menu">
+                    <span>
+                        <i class="ri-menu-line" onclick="menuToggle()"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="hero__content">
+                        <h1 class="mt-5 mb-4 hero__title" data-aos="fade-up" data-aos-duration="2000">
+                            Build Habits. Reach Goals.<br>
+                            Hire A ProCo.
+                        </h1>
+                        <p>
+                            Transform your productivity and achieve your goals with ProCo -
+                            Your personal productivity coach. Book a session now and take
+                            charge of your success.
+                        </p>
+                    </div>
+                    <button class="btn" onclick="">
+                        Book OneVOne
+                    </button>
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                    <div class="Tilt-inner">
+                        <img src="./Assets//images/hero-img-1.png" alt="" class="mt-5 w-100 hero__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="m-4">
+        <!-- Feature Section  -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="content">
+                        <ul class="features-list">
+                            <li>
+                                <div class="feature-box1 p-4">
+                                    <i class="ri-star-fill"></i>
+                                    <h5>Time Management</h5>
+                                    <br>
+                                    <p class="text-center">
+                                        A ProCo teaches clients effective time management strategies that optimize their
+                                        productivity and minimize wasted time.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-box2 p-4">
+                                    <i class="ri-star-fill"></i>
+                                    <h5>Mindset Shifts:</h5>
+                                    <br>
+                                    <p class="text-center">
+                                        A ProCo helps clients cultivate a growth mindset and overcome limiting beliefs
+                                        that hold
+                                        them back from achieving their goals.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-box3 p-4">
+                                    <i class="ri-star-fill"></i>
+                                    <h5>Strategic Planning</h5>
+                                    <br>
+                                    <p>
+                                        A ProCo helps clients develop a strategic plan that aligns with their values,
+                                        strengths,
+                                        and vision for the future.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-box4 p-3">
+                                    <i class="ri-star-fill"></i>
+                                    <h5>Work-Life Balance</h5>
+                                    <br>
+                                    <p>
+                                        A ProCo helps clients achieve a healthy work-life balance by setting boundaries,
+                                        managing stress, and prioritizing self-care.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="sidebar">
+                        <h1>Build websites with Webify</h1>
+                        <p>
+                            A ProCo, short for Productivity Coach, is a trained professional who specializes in helping
+                            individuals and teams optimize their productivity, improve their work habits, and achieve
+                            their
+                            professional goals. A ProCo understands the unique challenges that professionals face, such
+                            as
+                            managing multiple priorities, avoiding distractions, and staying motivated.
+                        </p>
+                        <p>
+                            Our team of productivity coaches works with top clients to develop customized productivity
+                            plans and
+                            provide ongoing support and guidance to ensure success. A ProCo is not just a coach but also
+                            a
+                            mentor, motivator, and accountability partner, who empowers their clients to achieve their
+                            full
+                            potential and live a fulfilling professional life. If you are looking to boost your
+                            productivity and
+                            take your career to the next level, consider working with a ProCo.
+                        </p>
+                        <button class="btn">Take 1-min Tour</button>
+                        <!-- Add your tour content here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
